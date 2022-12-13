@@ -1,6 +1,7 @@
 #include "ComponentArray.h"
 #include <algorithm>
 
+/*
 #define EXPAND_SIZE MAX_ENTITIES / 10
 
 template<typename ComponentType>
@@ -81,3 +82,4 @@ void ComponentArray<ComponentType>::HandleEntityDestroyedEvent(EntityDestroyedEv
         UnBindComponent(event.GetDestroyedEntity());
     }
 }
+*/

@@ -9,6 +9,41 @@ struct Transform2D
     int rotation;
     int scale;
 
+    static Transform2D CreateInvalidObject()
+    {
+        Transform2D invalidObject{};
+        invalidObject.isValid = false;
+        return invalidObject;
+    }
+
+    bool IsValid() const
+    {
+        return isValid;
+    }
+
+private:
+    bool isValid = true;
+};
+
+struct RigidBody
+{
+    float velocity;
+    float acceleration;
+
+    static RigidBody CreateInvalidObject()
+    {
+        RigidBody invalidObject{};
+        invalidObject.isValid = false;
+        return invalidObject;
+    }
+
+    bool IsValid() const
+    {
+        return isValid;
+    }
+
+private:
+    bool isValid = true;
 };
 
 #endif // __COMPONENT__H__

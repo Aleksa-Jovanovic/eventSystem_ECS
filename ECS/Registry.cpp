@@ -14,7 +14,7 @@ Registry& Registry::GetRegistry()
 
 Registry::Registry()
 {
-    for (Entity newEntityID = 0; newEntityID < MAX_ENTITIES; newEntityID++)
+    for (Entity newEntityID = 1; newEntityID <= MAX_ENTITIES; newEntityID++)
     {
         m_AvailableEntities.push(newEntityID);
     }
